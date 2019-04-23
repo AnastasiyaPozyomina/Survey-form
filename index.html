@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey form</h1>
+        <p id="description">Tell me more about what yourself! </p>
+    </header>
+    <div class="wrapper">
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Your name:</label> <input type="text" id="name" required
+                placeholder="name">
+            <label for="phone" id="number-label">Your phone:</label><input type="tel" min="0" max="10" id="phone"
+                placeholder="phone">
+            <label for="email" id="email-label">Your email:</label><input type="email" id="email" required
+                placeholder="email">
+            <label for="date" > Date of visit:</label> <input type="date" id="date">
+         <label for="number" id="label-number">Age:</label><input type="number" min="0" max="100" step="1"
+                id="number" placeholder="number">
+
+            <div class="price">
+                <p> How much do you spend on food per week? (PLN)</p>
+                <label><input type="radio" name="имя _переменной" value="0-50">0-50</label>
+                <label><input type="radio" name="имя _переменной" value="50-100">50-100</label>
+                <label><input type="radio" name="имя _переменной" value="150-200">150-200</label>
+                <label><input type="radio" name="имя _переменной" value="200+">200+</label>
+            </div>
+            
+    
+            <div class="food">
+                <label for="dropdown">Your favourite food:</label>
+                <select id="dropdown">
+                    <option value="">English</option>
+                    <option value="">Russian</option>
+                    <option value="">Swedish</option>
+                    <option value="">Chinese</option>
+                    <option value="">Japanese</option>
+                    <option value="">American</option>
+                    <option value="">Other food</option>
+                </select>
+            </div>
+            <div class="flavour">
+                <p>What is your favourite flavour?</p>
+                <label><input type="checkbox" name="имя _переменной" value="значение">Sweet</label>
+                <label><input type="checkbox" name="имя _переменной" value="значение">Sour</label>
+                <label><input type="checkbox" name="имя _переменной" value="значение">Bitter</label>
+                <label><input type="checkbox" name="имя _переменной" value="значение">Salty</label>
+                <label><input type="checkbox" name="имя _переменной" value="значение">Umami</label>
+            </div>
+            <div class="diet">
+                <label for="diet">What is your diet type? </label>
+                <select id="diet">
+                    <option value="">I'm vegan</option>
+                    <option value="">I'm vegetarian</option>
+                    <option value="">I'm on paleo diet</option>
+                    <option value="">I just eat healthy</option>
+                    <option value="">Japanese</option>
+                    <option value="">American</option>
+                    <option value="">It's complicated</option>
+                </select>
+            </div>
+<div class="comment">
+            <label for="comments">What you like to see on the menu?</label>
+            <textarea id="comments"></textarea>
+         </div>   
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
