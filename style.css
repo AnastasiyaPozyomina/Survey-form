@@ -16,13 +16,16 @@ body {
 #survey-form {
     margin: 0 auto;
     max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: left;
     padding-top: 40px;
     margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
 }
 
 #survey-form [placeholder] {
